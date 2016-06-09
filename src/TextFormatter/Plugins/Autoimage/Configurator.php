@@ -25,4 +25,9 @@ class Configurator extends ConfiguratorBase
         $tag->attributes->add($this->attrName)->filterChain->append($filter);
         $tag->template = '<img src="{@' . $this->attrName . '}"/>';
     }
+
+    public function getJSParser()
+    {
+        return \file_get_contents(realpath(__DIR__.'/Parser.js'));
+    }
 }
