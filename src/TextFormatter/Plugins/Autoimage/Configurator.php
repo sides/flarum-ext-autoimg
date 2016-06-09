@@ -12,7 +12,7 @@ class Configurator extends ConfiguratorBase
 {
     protected $attrName = 'src';
     protected $quickMatch = '://';
-    protected $regexp = '#https?://[-.\\w]+/[-./%\\w]+\\.(?:png|jpe?g|gif)(?!\\S)#';
+    protected $regexp = '#https?://[-.\\w]+/[-./%\\w]+\\.(?:png|jpe?g|gif)(?:[\\?:][\\w&=]+)?(?!\\S)#';
     protected $tagName = 'IMG';
 
     protected function setUp()
