@@ -8,5 +8,5 @@ use Sides\Autoimg\Listener;
 use Illuminate\Contracts\Events\Dispatcher;
 
 return function (Dispatcher $events) {
-    $events->subscribe(Listener\FormatAutovid::class);
+    $events->subscribe(Listener\FormatAutoimg::class);
 };
