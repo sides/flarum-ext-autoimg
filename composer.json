@@ -1,0 +1,35 @@
+{
+  "name": "sides/flarum-ext-autoimg",
+  "description": "Automatically embed images from image links.",
+  "type": "flarum-extension",
+  "keywords": ["flarum", "image", "embed"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "sides",
+      "email": "sides@sides.tv"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/sides/flarum-ext-autoimg/issues",
+    "source": "https://github.com/sides/flarum-ext-autoimg"
+  },
+  "require": {
+    "flarum/core": "^0.1.0-beta.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sides\\Autoimg\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Autoimg",
+      "icon": {
+        "name": "file-image-o",
+        "backgroundColor": "#541",
+        "color": "#a92"
+      }
+    }
+  }
+}
