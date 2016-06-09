@@ -41,7 +41,7 @@ class FormatAutoimg
         $name = "Autoimage";
         $event->configurator->plugins->set(
             $name,
-            "Sides\\Autoimage\\TextFormatter\\Plugins\\{$name}\\Configurator"
+            "Sides\\Autoimg\\TextFormatter\\Plugins\\{$name}\\Configurator"
         );
     }
 }
