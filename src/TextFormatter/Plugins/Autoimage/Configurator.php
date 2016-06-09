@@ -23,7 +23,7 @@ class Configurator extends ConfiguratorBase
         $tag = $this->configurator->tags->add($this->tagName);
         $filter = $this->configurator->attributeFilters->get('#url');
         $tag->attributes->add($this->attrName)->filterChain->append($filter);
-        $tag->template = '<img src="{@' . $this->attrName . '}"/>';
+        $tag->template = '<img src="{@' . $this->attrName . '}" alt="image" />';
     }
 
     public function getJSParser()
